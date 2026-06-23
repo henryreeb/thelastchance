@@ -66,8 +66,7 @@ export default function Navbar() {
           <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider text-zinc-300">
             <a href="#server" className="hover:text-white transition">Server</a>
             <a href="#rules" className="hover:text-white transition">Rules</a>
-            <a href="#leaderboards" className="hover:text-white transition">Leaderboard</a>
-            <a href="#community" className="hover:text-white transition">Community</a>
+            <a href="#faq" className="hover:text-white transition">FAQ</a>
           </nav>
 
           <motion.a

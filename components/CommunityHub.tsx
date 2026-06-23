@@ -45,7 +45,7 @@ export default function CommunityHub() {
         </div>
 
         {/* Social Grid */}
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-fit mx-auto">
           {links.map((link, i) => {
             const Icon = link.icon;
 
