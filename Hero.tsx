@@ -91,7 +91,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4 }}
-          className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
+          id="server"
+          className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto scroll-mt-32"
         >
           <div className="border border-white/10 bg-black/40 backdrop-blur-sm px-6 py-4">
             <p className="text-[10px] uppercase tracking-[0.3em] text-zinc-500">

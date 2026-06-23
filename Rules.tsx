@@ -59,7 +59,7 @@ export default function Rules() {
   return (
     <section 
         id="rules"
-        className="relative py-24 px-6 bg-black border-t border-white/5">
+        className="relative py-24 px-6 bg-black border-t border-white/5 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}

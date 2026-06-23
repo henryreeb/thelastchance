@@ -5,7 +5,9 @@
   --foreground: #171717;
   
 }
-<html lang="en" className="scroll-smooth">
+html {
+  scroll-behavior: smooth;
+}
 
 @theme inline {
   --color-background: var(--background);
