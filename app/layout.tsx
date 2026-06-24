@@ -20,11 +20,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "The Last Chance DayZ RP",
-  description: "The Last Chance is an Organic DayZ RP server with a focus on survival, realism, and community. Join us for a unique and immersive experience.",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
