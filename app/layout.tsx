@@ -1,36 +1,35 @@
-import { Inter, Bebas_Neue } from "next/font/google";
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
-const bebas = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-});
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+const jsonLd = {
+  "@context": "http://thelastchance.vercel.app/",
+  "@type": "VideoGame",
+  name: "The Last Chance",
+  description:
+    "Organic roleplay DayZ server focused on immersive survival.",
+  genre: "Survival",
+  gamePlatform: "PC",
+  url: "http://thelastchance.vercel.app/",
+  image: "http://thelastchance.vercel.app/public/images/social-preview.jpg",
+};
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className={`${inter.className} bg-black text-white`}>
-      {children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className="bg-black text-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
