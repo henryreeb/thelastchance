@@ -24,7 +24,7 @@ export default function MemoryBoard() {
           <div className="col-span-12 md:col-span-7 row-span-3 relative group overflow-hidden border border-white/10 rotate-[-1deg]">
             <Image
               src={images[0]}
-              alt=""
+              alt="DayZ survivors meeting at a faction base in Chernarus"
               fill
               className="object-cover group-hover:scale-110 transition duration-700"
             />
@@ -34,7 +34,7 @@ export default function MemoryBoard() {
           <div className="col-span-12 md:col-span-5 row-span-2 relative group overflow-hidden border border-white/10 rotate-[1deg]">
             <Image
               src={images[1]}
-              alt=""
+              alt="DayZ survivors on a boat ride in Chernarus"
               fill
               className="object-cover group-hover:scale-110 transition duration-700"
             />
@@ -44,7 +44,7 @@ export default function MemoryBoard() {
           <div className="col-span-6 md:col-span-3 row-span-2 relative group overflow-hidden border border-white/10 rotate-[2deg]">
             <Image
               src={images[2]}
-              alt=""
+              alt="DayZ survivor using a Raid hammer to raid a base."
               fill
               className="object-cover group-hover:scale-110 transition duration-700"
             />
@@ -53,7 +53,7 @@ export default function MemoryBoard() {
           <div className="col-span-6 md:col-span-3 row-span-2 relative group overflow-hidden border border-white/10 rotate-[-2deg]">
             <Image
               src={images[3]}
-              alt=""
+              alt="DayZ survivor using a spray can to customize clothing."
               fill
               className="object-cover group-hover:scale-110 transition duration-700"
             />
@@ -63,7 +63,7 @@ export default function MemoryBoard() {
           <div className="col-span-12 md:col-span-6 row-span-2 relative group overflow-hidden border border-white/10 rotate-[0.5deg]">
             <Image
               src={images[4]}
-              alt=""
+              alt="Exploring the Chernarus landscape."
               fill
               className="object-cover group-hover:scale-110 transition duration-700"
             />
@@ -73,7 +73,7 @@ export default function MemoryBoard() {
           <div className="col-span-12 md:col-span-6 row-span-2 relative group overflow-hidden border border-white/10 rotate-[-0.5deg]">
             <Image
               src={images[5]}
-              alt=""
+              alt="The Last Chance DayZ RP server flag."
               fill
               className="object-cover group-hover:scale-110 transition duration-700"
             />
