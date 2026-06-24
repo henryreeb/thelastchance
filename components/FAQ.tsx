@@ -24,6 +24,7 @@ const faqs = [
   },
   {
     question: "What does it cost to raid a base using a Raid Hammer?",
+    keepinmind: "One Raid Hammer is capable of destroying a single pristine lock or one fully constructed wall panel from either a vanilla or modded wall.",
     answer: [
       "Codelock - 5 cycles - 2.5 minutes per cycle - 12.5 minutes total",
       "4-dial - 5 cycles - 2.5 minutes per cycle - 12.5 minutes total",
@@ -172,14 +173,22 @@ export default function FAQ() {
                       transition={{ duration: 0.25 }}
                       className="overflow-hidden"
                     >
-                      <ul className="px-6 pb-6 space-y-3 text-zinc-400">
-                        {faq.answer.map((item, i) => (
+                      <div className="px-6 pb-6 text-zinc-400 leading-relaxed">
+                        {"keepinmind" in faq && faq.keepinmind && (
+                          <p className="mb-4 border-l border-white/20 pl-4 text-zinc-300">
+                            {faq.keepinmind}
+                          </p>
+                        )}
+
+                        <ul className="space-y-3">
+                          {faq.answer.map((item, i) => (
                             <li key={i} className="flex gap-3">
-                            <span className="text-white/50">•</span>
-                            <span>{item}</span>
+                              <span className="text-white/50">•</span>
+                              <span>{item}</span>
                             </li>
-                        ))}
+                          ))}
                         </ul>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
