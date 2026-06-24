@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+}
+html {
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -23,4 +27,57 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.fog {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+  background-repeat: repeat-x;
+  background-size: cover;
+  opacity: 0.25;
+  mix-blend-mode: screen;
+}
+
+.fog-1 {
+  background-image: url('/textures/fog1.png');
+  animation: driftFog 90s linear infinite;
+}
+
+.fog-2 {
+  background-image: url('/textures/fog2.png');
+  animation: driftFogReverse 140s linear infinite;
+  opacity: 0.18;
+}
+
+.fog-3 {
+  background-image: url('/textures/fog3.png');
+  animation: riseFog 60s ease-in-out infinite alternate;
+  opacity: 0.12;
+}
+@keyframes driftFog {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes driftFogReverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes riseFog {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-40px) scale(1.05);
+  }
 }
