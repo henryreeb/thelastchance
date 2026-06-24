@@ -2,7 +2,6 @@ import { Inter, Bebas_Neue } from "next/font/google";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
