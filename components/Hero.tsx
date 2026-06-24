@@ -11,20 +11,21 @@ export default function Hero() {
     await loadSlim(engine);
   }, []);
   return (
-    <section className="relative isolate h-screen w-full overflow-hidden bg-black">
+    
+    <section 
+    id="home"
+    className="relative isolate h-screen w-full overflow-hidden bg-black"
+    >
       
       {/* Video */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover scale-110 brightness-110 contrast-110 pointer-events-none"
-        >
-          <source src="/videos/tlctrailer.mp4" type="video/mp4" />
-        </video>
+    <div className="absolute inset-0 overflow-hidden z-0">
+        <iframe
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 scale-150 pointer-events-none"
+          src="https://www.youtube.com/embed/Z6bbk6nRmQY?autoplay=1&mute=1&loop=1&playlist=Z6bbk6nRmQY&controls=0&showinfo=0&rel=0&modestbranding=1"
+          title="Background Video"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        />
       </div>
 
       {/* Overlays */}

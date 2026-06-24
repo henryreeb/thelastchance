@@ -40,27 +40,36 @@ export default function Navbar() {
 
             {/* Primary Logo */}
             <div className="relative w-12 h-12 md:w-14 md:h-14">
+              <a
+                href="#home"
+                className="flex items-center gap-4 cursor-pointer"
+              >
               <Image
                 src="/images/LC_dayz_logo_title_transparent_copy_white.png"
                 alt="The Last Chance Script Logo"
                 fill
                 className="object-contain"
               />
+              </a>
             </div>
 
             {/* Divider (important for structure) */}
             <div className="w-px h-6 bg-white/20" />
 
             {/* Secondary Logo */}
-            <div className="relative w-12 h-12 md:w-14 md:h-14 opacity-80 hover:opacity-100 transition">
-              <Image
-                src="/images/tlcwhite.png"
-                alt="The Last Chance Icon"
-                fill
-                className="object-contain"
-              />
-            </div>
-
+              <div className="relative w-12 h-12 md:w-14 md:h-14 opacity-80 hover:opacity-100 transition">
+                <a
+                href="#home"
+                className="flex items-center gap-4 cursor-pointer"
+                >
+                  <Image
+                    src="/images/tlcwhite.png"
+                    alt="The Last Chance Icon"
+                    fill
+                    className="object-contain"
+                  />
+                </a>
+              </div>
           </div>
 
           <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider text-zinc-300">
