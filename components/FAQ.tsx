@@ -7,13 +7,13 @@ const faqs = [
   {
     question: "How do I join The Last Chance?",
     answer: [
-      "Join the Discord, read the rules, install the required mods, then search for The Last Chance in the DayZ launcher. View the Server Info section for more specific instructions."
+      "Join the Discord, read the rules, and install the required mods. Then open the DayZ launcher and connect — IP 40.160.28.204, Port 2302."
     ]
   },
   {
     question: "Is roleplay required?",
     answer: [
-      "The server is organic roleplay-focused. You do not need to perform a character voice, but interactions should feel grounded and immersive."
+      "The server is organic roleplay-focused.  Roleplay is highly encouraged but not forced in every encounter."
     ]
   },
   {
